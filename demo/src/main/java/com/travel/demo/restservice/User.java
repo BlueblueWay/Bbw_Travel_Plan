@@ -1,11 +1,11 @@
 package com.travel.demo.restservice;
 
-public class Greeting {
+public class User {
     private String name;
     private final long id;
     private final String content;
 
-    public Greeting(String name, long id, String content) {
+    public User(String name, long id, String content) {
         this.name = name;
         this.id = id;
         this.content = content;

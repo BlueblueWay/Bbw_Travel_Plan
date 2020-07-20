@@ -22,18 +22,18 @@ public class Event {
 
     }
 
+    public Event(String city, String lcation, long id, int openDate) {
+        this.city = city;
+        this.lcation = lcation;
+        this.eid = id;
+        this.openDate = openDate;
+    }
+
     public int getOpenDate() {
         return openDate;
     }
 
     public void setOpenDate(int openDate) {
-        this.openDate = openDate;
-    }
-
-    public Event(String city, String lcation, long id, int openDate) {
-        this.city = city;
-        this.lcation = lcation;
-        this.eid = id;
         this.openDate = openDate;
     }
 

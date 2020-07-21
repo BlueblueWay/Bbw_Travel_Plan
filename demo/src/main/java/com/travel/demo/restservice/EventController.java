@@ -17,11 +17,10 @@ public class EventController {
     @Autowired
     private EventService eventService;
 
-    @GetMapping("/event")
-    public List<Event> location() {
-        System.out.println("location server is running");
+    @GetMapping("/user/{id}/events")
+    public List<Event> getAllEvent(@PathVariable long id) {
 
-        return eventService.getAllEvent();
+        return eventService.getAllEvent(id);
     }
 
     @GetMapping("/event/{id}")

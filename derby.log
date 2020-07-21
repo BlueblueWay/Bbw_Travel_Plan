@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Wed Jul 15 18:17:34 PDT 2020:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0173-5532-b69e-0000070c73f0 
-on database directory memory:/home/lingshun/VSCodeWorkSpace/travel_app/232f9435-393c-4568-b374-d88f44f7cbd4 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@55054057 
+Tue Jul 21 00:07:01 PDT 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0173-7032-7196-0000071d9c28 
+on database directory memory:/home/lingshun/VSCodeWorkSpace/travel_app/c41ea9d6-805d-4800-8dda-dfedbfcdc1f0 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@55054057 
 Loaded from file:/home/lingshun/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
 java.vendor=Ubuntu
 java.runtime.version=11.0.7+10-post-Ubuntu-2ubuntu219.10

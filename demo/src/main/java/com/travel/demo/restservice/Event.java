@@ -10,10 +10,10 @@ import javax.persistence.ManyToOne;
 public class Event {
 
     private String city;
-    private String lcation;
+    private String location;
     @Id
     private long eid;
-    private int openDate;
+    private int openTime;
     @ManyToOne
     User user;
     // create another object and use @ManyToOne etc.h
@@ -22,19 +22,20 @@ public class Event {
 
     }
 
-    public Event(String city, String lcation, long id, int openDate) {
+    public Event(String city, String location, long eid, int openTime, long userId) {
         this.city = city;
-        this.lcation = lcation;
-        this.eid = id;
-        this.openDate = openDate;
+        this.location = location;
+        this.eid = eid;
+        this.openTime = openTime;
+        this.user = new User("", userId,"");
     }
 
     public int getOpenDate() {
-        return openDate;
+        return openTime;
     }
 
     public void setOpenDate(int openDate) {
-        this.openDate = openDate;
+        this.openTime = openDate;
     }
 
     public String getCity() {
@@ -46,11 +47,11 @@ public class Event {
     }
 
     public String getLcation() {
-        return lcation;
+        return location;
     }
 
     public void setLcation(String lcation) {
-        this.lcation = lcation;
+        this.location = lcation;
     }
 
     public long getId() {

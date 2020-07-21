@@ -1,14 +1,23 @@
 package com.travel.demo.restservice;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class User {
     private String name;
-    private final long id;
-    private final String content;
+    @Id
+    private long id;
+    private String birthday;
 
-    public User(String name, long id, String content) {
+    public User() {
+
+    }
+
+    public User(String name, long id, String birthday) {
         this.name = name;
         this.id = id;
-        this.content = content;
+        this.birthday = birthday;
     }
 
     public String getName() {
@@ -23,13 +32,13 @@ public class User {
         return id;
     }
 
-    public String getContent() {
-        return content;
+    public String getBirthday() {
+        return birthday;
     }
 
     @Override
     public String toString() {
-        return "Greeting [name=" + name + ", id=" + id + ", content=" + content + "]";
+        return "Greeting [name=" + name + ", id=" + id + ", content=" + birthday + "]";
     }
     
 

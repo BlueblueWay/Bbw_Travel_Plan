@@ -15,9 +15,9 @@ public class EventService {
 
     // event simulator
 
-    public List<Event> getAllEvent() {
+    public List<Event> getAllEvent(long id) {
         List<Event> events = new ArrayList<>();
-        eventRepository.findAll().forEach(events::add);
+        eventRepository.findByUserId(id);
         return events;
     }
 
